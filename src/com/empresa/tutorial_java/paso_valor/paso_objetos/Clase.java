@@ -1,3 +1,5 @@
+package com.empresa.tutorial_java.paso_valor.paso_objetos;
+
 class Clase {
     int entero;
     String string;
@@ -9,6 +11,6 @@ class Clase {
 
     @Override
     public String toString() {
-        return "Objeto { i=" + entero + ", a='" + string + "\'}";
+        return "Objeto { i=" + entero + ", a='" + string + "'}";
     }
 }

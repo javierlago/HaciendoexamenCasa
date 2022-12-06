@@ -1,17 +1,13 @@
-class Persona {
-    private final String nombre;
-    public Persona(String nombre) {
-        this.nombre = nombre;
-    }
-}
+package com.empresa.tutorial_java.equals;
 
-public class CompareWithEquals {
+class CompareWithEquals {
 
     public static void main(String... argv) {
 
         Persona p = new Persona("Pepe");
         Persona p1 = new Persona("Pepe");
         Persona p2 = p;
+
         System.out.println(p == p1); // false
         System.out.println(p.equals(p1)); // false
         System.out.println(p == p2); // true
@@ -21,7 +17,7 @@ public class CompareWithEquals {
         String s1 = "hola";
         String s2 = s1;
         String s3 = "hola";
-        String s4 =  new String("hola"); // aunque el IDE sugiere no hacer explicita la instancia,...
+        String s4 = new String("hola"); // aunque el IDE sugiere no hacer explicita la instancia,...
 
         System.out.println(s1 == s2); // true
         System.out.println(s1 == s3); // true
